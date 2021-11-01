@@ -2,53 +2,68 @@
 
 <html lang="ru">
 
-  <head>
+<head>
+  <meta charset="UTF-8">
+  <title>GTA LIVE WIKI</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Погрузись в реальность вместе с GTA LIVE." />
+  <meta name="viewport" 
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="keywords" content="gta,gtalive,wiki,altv" />
+  <link rel="icon" href="_media/logo.png" />
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="keywords" content="gta,gtalive,wiki,altv" />
-    <link rel="icon" href="_media/logo.png" />
-    <title> GTA LIVE WIKI </title>
-    <meta name="description" content="Погрузись в реальность вместе с GTA LIVE." />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/style.min.css" type="text/css">
 
-    <style>
-      nav.app-nav li ul {
-        min-width: 100px;
-      }
-      #carbonads {
-        box-shadow: none !important;
-        width: auto !important;
-      }
-      /* Fix issue on mobile devices where a custom cover image goes off the screen. */
-      section.cover.show {
-          height: 100%;
-      }
-    </style>
-  </head>
+  <!-- docsify-themeable styles-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" title="light">
+  <link rel="stylesheet alternative" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css" title="dark">
 
-  <body>
 
-    <div id="app">
-      <div
-      class="center">Loading</div>
-      <p><img src="_media/logo.png" alt="GTA.LIVE" ></p>
+  <style>
+    nav.app-nav li ul {
+      min-width: 100px;
+    }
+    #carbonads {
+      box-shadow: none !important;
+      width: auto !important;
+    }
+    /* Fix issue on mobile devices where a custom cover image goes off the screen. */
+    section.cover.show {
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"> 
+    <div class="center">Loading</div> 
+      <p> <img src="_media/logo.png" alt="GTA.LIVE" > </p>
     </div>
-
-    <script
-    src="//cdn.jsdelivr.net/npm/docsify-plugin-carbon@1/index.js">
-    </script>
-
+    
     <script>
-      // Set html "lang" attribute based on URL
-      var lang = location.hash.match(/#\/(de-de|en-us)\//);
-
-      if (lang) {
-        document.documentElement.setAttribute('lang', lang[1]);
-      }
-      // Docsify configuration
       window.$docsify = {
+
+        auto2top: true,
+        coverpage: true,
+        executeScript: true,
+        loadNavbar: true,
+        mergeNavbar: true,
+        loadSidebar: true,
+        maxLevel: 4,
+        subMaxLevel: 2,
+        loadFooter: true,
+
+        name: 'GTA LIVE WIKI',
+        themeColor: "#ffab02",
+
+        search: {
+          noData: {
+            '/de-de/': 'Keine Ergebnisse!',
+            '/en-us/': 'No results!',
+            '/': 'Никаких результатов!',
+          },
+        },
+
         alias: {
           '/.*/_navbar.md': '/_navbar.md',
           '/de-de/(.*)':
@@ -56,59 +71,46 @@
           '/en-us/(.*)':
             'url',
         },
-        auto2top: true,
-        coverpage: true,
-        executeScript: true,
-        loadSidebar: true,
-        loadNavbar: true,
-        mergeNavbar: true,
-        maxLevel: 4,
-        subMaxLevel: 2,
-        themeColor: "#ffab02", // TODO: Set your own color.
-        name: 'GTA LIVE WIKI',
+
         nameLink: {
           '/de-de/': '#/de-de/',
           '/en-us/': '#/en-us/',
           '/': '#/',
         },
-        search: {
-          noData: {
-            '/de-de/': 'Keine Ergebnisse!',
-            '/en-us/': 'No results!',
-            '/': 'Никаких результатов!',
-          },
-          paths: 'auto',
-          placeholder: {
-            '/de-de/': 'Suche',
-            '/en-us/': 'Search',
-            '/': 'Поиск',
-          },
-          pathNamespaces: ['/de-de', '/en-us']
+
+        paths: 'auto',
+
+        placeholder: {
+          '/de-de/': 'Suche',
+          '/en-us/': 'Search',
+          '/': 'Поиск',
         },
+
+        pathNamespaces: [
+          '/de-de', '/en-us'
+        ]
       };
     </script>
 
-    <!-- <script>
-      (function() {
-        function loadJS(src, attrs) {
-          document.write(
-            '<script src="' + src + '" ' + (attrs || '') + '><\/script>'
-          );
+    <script>
+      // Set html "lang" attribute based on URL
+      var lang = location.hash.match(/#\/(de-de|en-us)\//);
+        if (lang) {
+          document.documentElement.setAttribute('lang', lang[1]);
         }
-        // Public site only
-        if (/docsify/.test(location.host)) {
-          loadJS('//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/ga.min.js');
-          loadJS('//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/matomo.min.js');
-        }
-      })();
-    </script> -->
+    </script>
 
     <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"> </script>
     <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"> </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"> </script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"> </script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-nginx.min.js"> </script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"> </script>
-
-  </body>
+    <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"> </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-plugin-carbon@1/index.js"> </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/main.min.js" type="text/javascript"> </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/index.min.js" type="text/javascript"> </script>
 </html>
