@@ -11,12 +11,15 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta name="keywords" content="gta,gtalive,wiki,altv" />
   <link rel="icon" href="_media/logo.png" />
-
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/style.min.css" type="text/css">
-
-  <!-- docsify-themeable styles-->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" title="light">
-  <link rel="stylesheet alternative" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css" title="dark">
+  <link rel="stylesheet" 
+    href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/style.min.css" 
+    type="text/css">
+  <link rel="stylesheet" 
+    href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css" 
+    title="dark">
+  <link rel="stylesheet alternative" 
+    href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" 
+    title="light">
 
 
   <style>
@@ -56,6 +59,10 @@
         name: 'GTA LIVE WIKI',
         themeColor: "#ffab02",
 
+        darklightTheme: {
+          defaultTheme: 'light',
+        },
+
         search: {
           noData: {
             '/de-de/': 'Keine Ergebnisse!',
@@ -67,9 +74,9 @@
         alias: {
           '/.*/_navbar.md': '/_navbar.md',
           '/de-de/(.*)':
-            'url',
+            'https://raw.githubusercontent.com/docsifyjs/docs-ee/master/$1',
           '/en-us/(.*)':
-            'url',
+            'https://raw.githubusercontent.com/docsifyjs/docs-en/master/$1',
         },
 
         nameLink: {
