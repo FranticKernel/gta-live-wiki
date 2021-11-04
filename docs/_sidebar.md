@@ -2,15 +2,18 @@
 
   - [Регистрация](main/registration.md)
   - [Интерфейс](main/interface.md)
+  - [Популярные вопросы](main/faq.md)
 
-- Работы
+- Игровые активности
 
   - [Основные работы](main/jobs.md)
   - [Хобби](main/hobby.md)
+  - [Ивенты](main/events.md)
+  - [Криминальные хобби](main/criminal_hobby.md)
 
-- Транспорт
+- Абоба
 
-  - [Тест 2](main/test2.md)
+  - [Ну абоба и абоба](main/1.md)
 
 ***
 - **Ссылки**
