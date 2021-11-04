@@ -14,5 +14,7 @@
 
 ***
 - **Ссылки**
+- [Сайт](https://gta.live/)
+- [Форум](https://forum.gta.live/)
+- [Вконтакте](https://vk.com/gta.live)
 - [Discord](https://discord.gg/znBZsnJt8p)
-- [PornHub](https://gta.live/)
