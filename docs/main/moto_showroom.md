@@ -20,6 +20,5 @@
 |  Sanchez        |      $31 000    ||  Hakuchou       |      $87 000    |
 |  BF-400         |      $32 000    ||  Chimera        |      $90 000    |
 |  Akuma          |      $35 000    ||  Stryder        |      $95 000    |
-|  Cliffhanger    |      $35 000    ||  Deathbike      |      $100 000   |
+|  Cliffhanger    |      $35 000    ||  Hakuchou Drag  |      $130 000   |
 |  Blazer Aqua    |      $110 000   ||  Shotaro        |      $500 000   |
-|  Hakuchou Drag  |      $130 000   ||  Deathbike      |      $100 000   |
